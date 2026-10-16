@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Web App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #101827, #1769aa);
+    }
+
+    .card {
+      width: 90%;
+      max-width: 500px;
+      padding: 40px 25px;
+      text-align: center;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #e0eaff;
+    }
+
+    button {
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #102033;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Welcome to My Web App!</h1>
+    <p>My first internship project using Node.js and Docker.</p>
+    <p>This application is ready to be containerized.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </main>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Success! My web page is working.";
+    }
+  </script>
+</body>
+</html>

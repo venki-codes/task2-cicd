@@ -1,0 +1,11 @@
+
+{
+  "name": "welcome-to-docker",
+  "version": "1.0.0",
+  "description": "A simple web app containerized using Docker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "private": true
+}
