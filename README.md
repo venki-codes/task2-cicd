@@ -1,5 +1,8 @@
 # CI/CD Pipeline with GitHub Actions
 
+![CI/CD Pipeline](https://github.com/venki-codes/task2-cicd/actions/workflows/ci-cd.yml/badge.svg)
+
+
 ## Description
 This project demonstrates a CI/CD pipeline using GitHub Actions to automate the build and testing of a Dockerized web application.
 
@@ -29,12 +32,16 @@ docker run -d -p 3000:3000 --name task2-cicd-app task2-cicd
 http://localhost:3000
 
 ## CI/CD Workflow
-GitHub Actions will be used to automate:
+
+GitHub Actions automates the following steps:
+
 1. Checking out the project.
-2. Installing dependencies.
-3. Testing the application.
-4. Building the Docker image.
-5. Publishing the Docker image.
+2. Setting up Node.js.
+3. Installing dependencies.
+4. Testing the application.
+5. Building the Docker image.
+
+The workflow runs automatically when code is pushed to the main branch or when a pull request is created.
 
 ## Repository
 https://github.com/venki-codes/task2-cicd
